@@ -1,0 +1,53 @@
+.menucontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px 0;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 100px;
+}
+.menucontainer h1 {
+  grid-column: 1 / 4;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.menucontainer p {
+  grid-column: 1 / 4;
+}
+
+.menu {
+  background-color: white;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0 5px grey;
+  border-radius: 0 20px;
+}
+
+.menu h4 {
+  font-family: "Anton", sans-serif;
+}
+
+.menu img {
+  width: 250px;
+}
+
+.menu a {
+  background-color: #8dbd56;
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px 10px 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    grid-column: 1 / 4;
+  }
+}

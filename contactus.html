@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="120723CSS.css" />
+    <link rel="stylesheet" href="menu.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="burger_logo.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/31116fad5f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function showdropdown() {
+        let navbar = document.querySelector(".navbar");
+        if (navbar.className == "navbar") navbar.classList.add("dropdown");
+        else navbar.classList.remove("dropdown");
+      }
+    </script>
+    <style>
+        .contactus {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contactus img {
+        width: 100%;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!--header starts-->
+    <div class="header">
+        <img src="burger_logo.png" alt="" />
+        <h1>Best Aussie Burgers</h1>
+      </div>
+      <!--header ends-->
+  
+      <!--nav starts-->
+      <div class="navbar">
+        <a class="home" href="120723Assessment.html"
+          ><i class="fa-solid fa-house"></i> Home</a
+        >
+  
+        <div class="navbar_group order">
+          <div class="navbar_label">
+            <i class="fa-solid fa-mobile-screen-button"></i> Online Order
+          </div>
+          <div class="navbar_dropdown">
+            <a href="menu.html">Menu</a>
+            <a href="orderfaq.html">Order FAQ</a>
+          </div>
+        </div>
+  
+        <div class="navbar_group members">
+          <div class="navbar_label">
+            <i class="fa-solid fa-face-smile-wink"></i> Member
+          </div>
+          <div class="navbar_dropdown">
+            <a href="login.html">Member Login</a>
+            <a href="benefit.html">Member Benefits</a>
+            <a href="signup.html">Member Sign up</a>
+            <a href="dataprivacy.html">Data Privacy Policy</a>
+          </div>
+        </div>
+  
+        <div class="navbar_group aboutus">
+          <div class="navbar_label">
+            <i class="fa-solid fa-burger"></i> About Us
+          </div>
+          <div class="navbar_dropdown">
+            <a href="aboutus.html">Our Story</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="sitemap.html">Site Map</a>
+          </div>
+        </div>
+  
+        <form class="search_box" action="">
+          <input type="text" aria-label="search input" />
+          <button class="btn_search">Search</button>
+        </form>
+        <div class="hamburger" onclick="showdropdown()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+  
+      <!--nav ends-->
+  
+      <!--banner starts-->
+      <div class="banner">
+        <img src="https://bestaussieburgers.com/images/banner2.jpg" alt="" />
+        <div class="bannertext">
+          <h2>AUSSIE BEEF BURGERS</h2>
+          <p>
+            It's not rocket science why this has been an Aussie favourite for over
+            40 years. It's just 100% Aussie beef, flame-grilled to perfection
+          </p>
+        </div>
+      </div>
+      <!--banner ends-->
+
+      <div class="contactus">
+        <img src="contactus.webp" alt="" />
+      </div>
+
+
+      <!--footer starts-->
+      <div class="footer">
+        <h3>CONNECT WITH US</h3>
+        <img src="https://bestaussieburgers.com/images/facebook.svg" alt="" />
+        <img src="https://bestaussieburgers.com/images/instagram.svg" alt="" />
+        <img src="https://bestaussieburgers.com/images/twitter.svg" alt="" />
+        <img src="https://bestaussieburgers.com/images/youtube.svg" alt="" />
+        <h4>Copyright @2023 Best Aussie Burgers</h4>
+      </div>
+      <!--footer ends-->
+    </body>
+  
+
+
+
+  </body>
+</html>

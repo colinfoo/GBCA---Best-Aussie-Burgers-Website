@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="120723CSS.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="burger_logo.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/31116fad5f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function showdropdown() {
+        let navbar = document.querySelector(".navbar");
+        if (navbar.className == "navbar") navbar.classList.add("dropdown");
+        else navbar.classList.remove("dropdown");
+      }
+    </script>
+  </head>
+  <body>
+    <!--header starts-->
+    <div class="header">
+      <img src="burger_logo.png" alt="" />
+      <h1>Best Aussie Burgers</h1>
+    </div>
+    <!--header ends-->
+
+    <!--nav starts-->
+    <div class="navbar">
+      <a class="home" href="120723Assessment.html"
+        ><i class="fa-solid fa-house"></i> Home</a
+      >
+
+      <div class="navbar_group order">
+        <div class="navbar_label">
+          <i class="fa-solid fa-mobile-screen-button"></i> Online Order
+        </div>
+        <div class="navbar_dropdown">
+          <a href="menu.html">Menu</a>
+          <a href="orderfaq.html">Order FAQ</a>
+        </div>
+      </div>
+
+      <div class="navbar_group members">
+        <div class="navbar_label">
+          <i class="fa-solid fa-face-smile-wink"></i> Member
+        </div>
+        <div class="navbar_dropdown">
+          <a href="login.html">Member Login</a>
+          <a href="benefit.html">Member Benefits</a>
+          <a href="signup.html">Member Sign up</a>
+          <a href="dataprivacy.html">Data Privacy Policy</a>
+        </div>
+      </div>
+
+      <div class="navbar_group aboutus">
+        <div class="navbar_label">
+          <i class="fa-solid fa-burger"></i> About Us
+        </div>
+        <div class="navbar_dropdown">
+          <a href="aboutus.html">Our Story</a>
+          <a href="contactus.html">Contact Us</a>
+          <a href="sitemap.html">Site Map</a>
+        </div>
+      </div>
+
+      <form class="search_box" action="">
+        <input type="text" aria-label="search input" />
+        <button class="btn_search">Search</button>
+      </form>
+      <div class="hamburger" onclick="showdropdown()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <!--nav ends-->
+
+    <!--banner starts-->
+    <div class="banner">
+      <img src="banner3.webp" alt="" />
+      <div class="bannertext">
+        <h2>CHICKEN BURGERS</h2>
+        <p>
+          Big, Thick, Crunchy & Juicy. Bite into better with our NEW fried
+          chicken range.
+        </p>
+      </div>
+    </div>
+    <!--banner ends-->
+
+    <!--Sign up starts-->
+    <div class="signup_container">
+      <h2>Sign up</h2>
+      <div class="headp">
+        <p>
+          Checkout faster, receive exclusive rewards and be the first to find
+          out about new menu items and promotions.
+        </p>
+      </div>
+      <div>
+        <button class="btn btn-blue">
+          <i class="fa-brands fa-facebook"></i> SIGNUP WITH FACEBOOK
+        </button>
+      </div>
+      <div>
+        <button class="btn btn-black">
+          <i class="fa-brands fa-google"></i> SIGNUP WITH GOOGLE
+        </button>
+      </div>
+      <h2>OR</h2>
+
+      <form>
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" />
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+        <p>We will send you an email to verify your account.</p>
+
+        <label for="mobile">Mobile</label>
+        <input type="text" id="mobile" />
+
+        <label for="location">Location</label>
+        <input type="text" id="location" />
+        <datalist id="locations">
+          <option value="New South Wales">New South Wales</option>
+          <option value="Queensland">Queensland</option>
+          <option value="South Australia">South Australia</option>
+          <option value="Tasmania">Tasmania</option>
+          <option value="Victoria">Victoria</option>
+          <option value="Western Ausralia">Western Ausralia</option>
+          <option value="Northern Territory">Northern Territory</option>
+          <option value="Australian Capital Territory">
+            Australian Capital Territory
+          </option>
+        </datalist>
+
+        <label for="Password">Password</label>
+        <input type="Password" id="Password" />
+        <p>
+          Your password must be at least 8 characters long and should include 1
+          uppercase letter, 1 lower case letter, 1 number and 1 special
+          character.
+        </p>
+      </form>
+      <div>
+        <button class="btn btn-green">SIGN UP</button>
+      </div>
+    </div>
+
+    <!--Sign up ends-->
+
+    <!--footer starts-->
+    <div class="footer">
+      <h3>CONNECT WITH US</h3>
+      <img src="https://bestaussieburgers.com/images/facebook.svg" alt="" />
+      <img src="https://bestaussieburgers.com/images/instagram.svg" alt="" />
+      <img src="https://bestaussieburgers.com/images/twitter.svg" alt="" />
+      <img src="https://bestaussieburgers.com/images/youtube.svg" alt="" />
+      <h4>Copyright @2023 Best Aussie Burgers</h4>
+    </div>
+    <!--footer ends-->
+  </body>
+</html>
